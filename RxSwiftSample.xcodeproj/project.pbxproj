@@ -75,21 +75,77 @@
 		2E3B0DD820CF8EA800A155F5 /* RxSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
-				2E3B0DD920CF8EA800A155F5 /* AppDelegate.swift */,
-				2E3B0DDB20CF8EA800A155F5 /* ViewController.swift */,
-				2E3B0DDD20CF8EA800A155F5 /* Main.storyboard */,
-				2E3B0DE020CF8EA800A155F5 /* Assets.xcassets */,
-				2E3B0DE220CF8EA800A155F5 /* LaunchScreen.storyboard */,
+				2E82E38120F335D80005360A /* Drawable */,
+				2E82E38020F335CD0005360A /* Layout */,
+				2E82E37F20F335BD0005360A /* Common */,
+				2E82E37E20F335B70005360A /* View */,
+				2E82E37D20F335AB0005360A /* Model */,
+				2E82E37C20F3359F0005360A /* ViewModel */,
 				2E3B0DE520CF8EA800A155F5 /* Info.plist */,
-				2EA1FBB320D3A4EE00E72B3D /* LoginViewModel.swift */,
-				2E790D0A20D794490044BEBA /* TaskTableViewController.swift */,
-				2E790D0C20D794560044BEBA /* TaskTableViewModel.swift */,
-				2E5EF53D20D7A12C00D3E346 /* Item.swift */,
-				2E1D6F6720D8C4DD00607291 /* TaskTableModel.swift */,
-				2E6531F720DA3D3F00B14BED /* AddTaskViewController.swift */,
-				2E6531F920DA3D4E00B14BED /* AddTaskViewModel.swift */,
 			);
 			path = RxSwiftSample;
+			sourceTree = "<group>";
+		};
+		2E82E37C20F3359F0005360A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E6531F920DA3D4E00B14BED /* AddTaskViewModel.swift */,
+				2E790D0C20D794560044BEBA /* TaskTableViewModel.swift */,
+				2EA1FBB320D3A4EE00E72B3D /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2E82E37D20F335AB0005360A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D6F6720D8C4DD00607291 /* TaskTableModel.swift */,
+				2E82E38220F3360D0005360A /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E82E37E20F335B70005360A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B0DDB20CF8EA800A155F5 /* ViewController.swift */,
+				2E6531F720DA3D3F00B14BED /* AddTaskViewController.swift */,
+				2E790D0A20D794490044BEBA /* TaskTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E82E37F20F335BD0005360A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B0DD920CF8EA800A155F5 /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2E82E38020F335CD0005360A /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B0DDD20CF8EA800A155F5 /* Main.storyboard */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		2E82E38120F335D80005360A /* Drawable */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B0DE020CF8EA800A155F5 /* Assets.xcassets */,
+				2E3B0DE220CF8EA800A155F5 /* LaunchScreen.storyboard */,
+			);
+			path = Drawable;
+			sourceTree = "<group>";
+		};
+		2E82E38220F3360D0005360A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EF53D20D7A12C00D3E346 /* Item.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		57FE66CB59C335AC6B57213C /* Frameworks */ = {
@@ -138,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = kashikomasweet;
 				TargetAttributes = {
 					2E3B0DD520CF8EA800A155F5 = {
@@ -276,6 +332,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -283,6 +340,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -333,6 +391,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -340,6 +399,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
