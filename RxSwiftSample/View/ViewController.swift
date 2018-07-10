@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        viewModel.initalize()
         usernameTextField.rx.text.orEmpty.bind(to: viewModel.username).disposed(by: disposeBag)
         passwordTextFiled.rx.text.orEmpty.bind(to: viewModel.password).disposed(by: disposeBag)
         

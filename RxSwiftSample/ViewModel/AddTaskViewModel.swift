@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 
-class AddTaskViewModel {
+struct AddTaskViewModel {
     
     var title = Variable<String>("")
     

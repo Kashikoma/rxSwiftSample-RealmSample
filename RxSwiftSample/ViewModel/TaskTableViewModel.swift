@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 
-class TaskTableViewModel {
+struct TaskTableViewModel {
     
     let items = Variable<[Item]>([])
     
