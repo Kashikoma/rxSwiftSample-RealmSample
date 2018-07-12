@@ -11,19 +11,19 @@ import RxCocoa
 
 struct AddTaskViewModel {
     
+    let model:AddTaskModel = AddTaskModel()
+    
     var title = Variable<String>("")
     
     var isValid:Observable<Bool> {
         return title.asObservable().map {
             param in
-                return param.characters.count != 0
+                return param.count != 0
         }
     }
     
     
     func addTitleData() {
-        let item:Item = Item()
-        item.title = self.title.value
-        let _ = TaskTableModel.init().saveItem(item: item)
+        model.addTitleData(title: title.value)
     }
 }

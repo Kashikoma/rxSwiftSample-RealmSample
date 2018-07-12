@@ -6,41 +6,20 @@
 //  Copyright © 2018年 kashikomasweet. All rights reserved.
 //
 
-import Foundation
-import RealmSwift
+import RxSwift
+import RxCocoa
 
 class TaskTableModel {
-    //TODO エラー処理実装
-    //TODO 暗号化処理
+    var isSuccess = false
+    let taskItems = Variable<[Item]>([])
     
-    func saveItem(item:Item) -> Bool {
-        let realm = try! Realm()
-        try! realm.write() {
-            item.setNewId()
-            realm.add(item)
-        }
-        return true
+    func deleteItem(path:Int) {
+        isSuccess = TaskTableRepository.init().deleteItem(item: taskItems.value[path])
+        self.getItem()
     }
     
-    func deleteItem(item:Item) -> Bool {
-        let realm = try! Realm()
-        try! realm.write() {
-            realm.delete(item)
-        }
-        return true
-    }
-    
-    func updateItem(item:Item) -> Bool {
-        let realm = try! Realm()
-        try! realm.write() {
-            realm.add(item, update: true)
-        }
-        return true
-    }
-    
-    func getItem() -> [Item] {
-        let realm = try! Realm()
-        let items = realm.objects(Item.self)
-        return Array(items)
+    func getItem() {
+        let list = TaskTableRepository.init().getItem()
+        taskItems.value = list
     }
 }

@@ -21,7 +21,6 @@ class AddTaskViewController : UIViewController {
         
         titleTextFIeld.rx.text.orEmpty.bind(to: viewModel.title).disposed(by: disposeBag)
         viewModel.isValid.map{ $0 }.bind(to: addBtn.rx.isEnabled).disposed(by: disposeBag)
-//        viewModel.title.asObservable().map{title in title.characters.count != 0}.bind(to: addBtn.rx.isEnabled).disposed(by: disposeBag)
         addBtn.rx.tap.subscribe(onNext: { _ in
             self.viewModel.addTitleData()
             self.dismiss(animated: true, completion: nil)

@@ -10,6 +10,8 @@
 		2E1611C020F46A760075EE16 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1611BF20F46A760075EE16 /* LoginRepository.swift */; };
 		2E1611C220F46B220075EE16 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1611C120F46B220075EE16 /* LoginResult.swift */; };
 		2E1611C420F46C4E0075EE16 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1611C320F46C4E0075EE16 /* LoginModel.swift */; };
+		2E1BDEBB20F72FCA00437AEB /* AddTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BDEBA20F72FCA00437AEB /* AddTaskModel.swift */; };
+		2E1BDEBD20F7302B00437AEB /* AddTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BDEBC20F7302B00437AEB /* AddTaskRepository.swift */; };
 		2E1D6F6820D8C4DD00607291 /* TaskTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D6F6720D8C4DD00607291 /* TaskTableModel.swift */; };
 		2E3B0DDA20CF8EA800A155F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B0DD920CF8EA800A155F5 /* AppDelegate.swift */; };
 		2E3B0DDC20CF8EA800A155F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B0DDB20CF8EA800A155F5 /* ViewController.swift */; };
@@ -21,6 +23,7 @@
 		2E6531FA20DA3D4E00B14BED /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6531F920DA3D4E00B14BED /* AddTaskViewModel.swift */; };
 		2E790D0B20D794490044BEBA /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E790D0A20D794490044BEBA /* TaskTableViewController.swift */; };
 		2E790D0D20D794560044BEBA /* TaskTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E790D0C20D794560044BEBA /* TaskTableViewModel.swift */; };
+		2E949A3C20F5E8D1008EDD98 /* TaskTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E949A3B20F5E8D1008EDD98 /* TaskTableRepository.swift */; };
 		2EA1FBB420D3A4EE00E72B3D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1FBB320D3A4EE00E72B3D /* LoginViewModel.swift */; };
 		8D5C2C4E1B79F55072328CB1 /* Pods_RxSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573C4232649860833E85859 /* Pods_RxSwiftSample.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +32,8 @@
 		2E1611BF20F46A760075EE16 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		2E1611C120F46B220075EE16 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		2E1611C320F46C4E0075EE16 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		2E1BDEBA20F72FCA00437AEB /* AddTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskModel.swift; sourceTree = "<group>"; };
+		2E1BDEBC20F7302B00437AEB /* AddTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskRepository.swift; sourceTree = "<group>"; };
 		2E1D6F6720D8C4DD00607291 /* TaskTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableModel.swift; sourceTree = "<group>"; };
 		2E3B0DD620CF8EA800A155F5 /* RxSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3B0DD920CF8EA800A155F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		2E6531F920DA3D4E00B14BED /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
 		2E790D0A20D794490044BEBA /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		2E790D0C20D794560044BEBA /* TaskTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewModel.swift; sourceTree = "<group>"; };
+		2E949A3B20F5E8D1008EDD98 /* TaskTableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableRepository.swift; sourceTree = "<group>"; };
 		2EA1FBB320D3A4EE00E72B3D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B9DCFA7D3F7C14225C20E144 /* Pods-RxSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftSample/Pods-RxSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E0F2B7B198F4B2D6F1D25CB0 /* Pods-RxSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftSample/Pods-RxSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				2E1611BF20F46A760075EE16 /* LoginRepository.swift */,
+				2E949A3B20F5E8D1008EDD98 /* TaskTableRepository.swift */,
+				2E1BDEBC20F7302B00437AEB /* AddTaskRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 			children = (
 				2E1D6F6720D8C4DD00607291 /* TaskTableModel.swift */,
 				2E1611C320F46C4E0075EE16 /* LoginModel.swift */,
+				2E1BDEBA20F72FCA00437AEB /* AddTaskModel.swift */,
 				2E82E38220F3360D0005360A /* Entity */,
 			);
 			path = Model;
@@ -304,12 +313,15 @@
 				2E3B0DDC20CF8EA800A155F5 /* ViewController.swift in Sources */,
 				2E1611C420F46C4E0075EE16 /* LoginModel.swift in Sources */,
 				2E3B0DDA20CF8EA800A155F5 /* AppDelegate.swift in Sources */,
+				2E949A3C20F5E8D1008EDD98 /* TaskTableRepository.swift in Sources */,
 				2E6531FA20DA3D4E00B14BED /* AddTaskViewModel.swift in Sources */,
 				2E1D6F6820D8C4DD00607291 /* TaskTableModel.swift in Sources */,
 				2E790D0B20D794490044BEBA /* TaskTableViewController.swift in Sources */,
 				2E1611C020F46A760075EE16 /* LoginRepository.swift in Sources */,
 				2E1611C220F46B220075EE16 /* LoginResult.swift in Sources */,
+				2E1BDEBD20F7302B00437AEB /* AddTaskRepository.swift in Sources */,
 				2E790D0D20D794560044BEBA /* TaskTableViewModel.swift in Sources */,
+				2E1BDEBB20F72FCA00437AEB /* AddTaskModel.swift in Sources */,
 				2E5EF53E20D7A12C00D3E346 /* Item.swift in Sources */,
 				2E6531F820DA3D3F00B14BED /* AddTaskViewController.swift in Sources */,
 				2EA1FBB420D3A4EE00E72B3D /* LoginViewModel.swift in Sources */,

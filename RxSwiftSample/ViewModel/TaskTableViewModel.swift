@@ -11,7 +11,15 @@ import RxCocoa
 
 struct TaskTableViewModel {
     
-    let items = Variable<[Item]>([])
+    private let model:TaskTableModel = TaskTableModel()
+    var disposeBag = DisposeBag()
+    
+    var items:Observable<[Item]> {
+        return model.taskItems.asObservable().map {
+            taskItems in
+                return taskItems
+        }
+    }
     
     var isEdit: Observable<Bool> {
         return Observable.combineLatest(self.items.asObservable(),self.editBtnStr.asObservable()) {
@@ -38,12 +46,10 @@ struct TaskTableViewModel {
     }
     
     func reloadData() {
-        let model:TaskTableModel = TaskTableModel()
-        let list = model.getItem()
-        self.items.value = list
+        model.getItem()
     }
     
     func deleteData(path:Int) {
-        let _ :Bool = TaskTableModel.init().deleteItem(item: items.value[path])
+        model.deleteItem(path: path)
     }
 }

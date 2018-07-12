@@ -20,7 +20,7 @@ class TaskTableViewController :UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.items.asObservable()
+        viewModel.items
             .bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, element, cell) in
                 cell.textLabel?.text = "\(element.title)"
             }

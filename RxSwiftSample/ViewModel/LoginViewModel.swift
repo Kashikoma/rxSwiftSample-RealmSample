@@ -11,7 +11,7 @@ import RxCocoa
 
 struct LoginViewModel {
  
-    private let loginModel:LoginModel = LoginModel()
+    private let model:LoginModel = LoginModel()
     
     var username = Variable<String>("")
     var password = Variable<String>("")
@@ -19,12 +19,12 @@ struct LoginViewModel {
     var disposeBag = DisposeBag()
     
     func initalize() {
-        loginModel.isProcess.asObservable().subscribe(onNext: {process in
+        model.isProcess.asObservable().subscribe(onNext: {process in
             if(process) {
                 //プログレスまわす
             } else {
                 //まわすのやめる
-                self.isCertification.value = self.loginModel.isSuccess
+                self.isCertification.value = self.model.isSuccess
             }
         }).disposed(by: disposeBag)
     }
@@ -32,18 +32,17 @@ struct LoginViewModel {
     var isValid: Observable<Bool> {
         return Observable.combineLatest(self.username.asObservable(),self.password.asObservable()) {
             (username,password) in
-            return username.characters.count > 0 && password.characters.count > 0
+            return username.count > 0 && password.count > 0
         }
     }
     
     var isCertification = Variable<Bool>(false)
     
-    //何契機に呼ばれたかはわからないけど、このメソッドでRepositoryのどのメソッドを呼べばよいかは知っている
+    //何契機に呼ばれたかはわからないけど、このメソッドでModelのどのメソッドを呼べばよいかは知っている
     //結果をどの変数にセットするかも知っている
     func attemptToLogin() {
         print("username:",username.value)
         print("password:",password.value)
-        loginModel.isProcess.value = true
-        loginModel.loginRequest(id: username.value, pw: password.value)
+        model.loginRequest(id: username.value, pw: password.value)
     }
 }
